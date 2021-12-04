@@ -1,0 +1,13 @@
+com\app\recomendaciones\config\SwaggerConfiguration.class
+com\app\recomendaciones\clients\MuroFeignClient.class
+com\app\recomendaciones\services\RecomendacionService.class
+com\app\recomendaciones\models\Recomendaciones.class
+com\app\recomendaciones\repository\RecomendacionesRepository.class
+com\app\recomendaciones\repository\ProyectosRepository.class
+com\app\recomendaciones\controllers\RecomendacionesController.class
+com\app\recomendaciones\repository\MuroRepository.class
+com\app\recomendaciones\models\Muro.class
+com\app\recomendaciones\AppRecomendacionesApplication.class
+com\app\recomendaciones\clients\ProyectosFeignClient.class
+com\app\recomendaciones\models\Proyectos.class
+com\app\recomendaciones\services\IRecomendacionService.class
