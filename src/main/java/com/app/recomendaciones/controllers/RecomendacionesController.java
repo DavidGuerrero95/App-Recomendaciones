@@ -241,4 +241,15 @@ public class RecomendacionesController {
 		logger.info(e.getMessage());
 		return mRepository.findAll();
 	}
+	
+	@DeleteMapping("/recomendaciones/eliminar/all/usuarios/")
+	@ResponseStatus(code = HttpStatus.ACCEPTED)
+	public Boolean eliminarAllUsuario() throws IOException {
+		try {
+			rRepository.deleteAll();
+			return true;
+		} catch (Exception e) {
+			throw new IOException("Error: " + e.getMessage());
+		}
+	}
 }
