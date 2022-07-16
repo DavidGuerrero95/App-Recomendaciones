@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.app.recomendaciones.models.Proyectos;
+import com.app.recomendaciones.response.Proyectos;
 
 @FeignClient(name = "app-proyectos")
 public interface ProyectosFeignClient {

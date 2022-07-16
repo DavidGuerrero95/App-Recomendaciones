@@ -13,4 +13,7 @@ public interface RecomendacionesRepository extends MongoRepository<Recomendacion
 
 	@RestResource(path = "exist-user")
 	public Boolean existsByUsername(@Param("username") String username);
+
+	@RestResource(path = "delete-user")
+	public void deleteByUsername(@Param("username") String username);
 }

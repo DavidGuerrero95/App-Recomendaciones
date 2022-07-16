@@ -1,6 +1,8 @@
-package com.app.recomendaciones.models;
+package com.app.recomendaciones.response;
 
 import java.util.List;
+
+import javax.validation.constraints.NotBlank;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -11,19 +13,20 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Document(collection = "recomendaciones")
 @Data
 @NoArgsConstructor
-public class Recomendaciones {
+public class Muro {
 
 	@Id
 	@JsonIgnore
 	private String id;
 
 	@Indexed(unique = true)
-	private String username;
+	private Integer codigoMuro;
 
-	private List<String> intereses;
-	private List<Double> ubicacion;
+	@NotBlank(message = "ubicacion cannot be null")
+	private List<Double> localizacion;
+
+	private List<Integer> idProyectos;
 
 }
